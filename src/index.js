@@ -1,6 +1,9 @@
 // We have to understand the problem.
 // 1. What is the unknown?
+find out if the two numbers have the same frequency of digits
+must have a time complexity of 0(N)
 // 2. What are the data inputs?
+Two positive integers
 // 3. Can you restate the problem in your own words?
 // 4. Can the unknown be determined from the data inputs?
 // 5. Is the data inputs sufficient to determine the unknown? Insufficient? Redundant? Contradictory?
