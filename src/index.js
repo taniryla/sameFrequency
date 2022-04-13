@@ -97,21 +97,21 @@ function sameFrequency(int1, int2) {
         obj1[key1] = 1;
       }
       console.log(obj1);
-    }
-    for (let j = 0; j < char2.length; j++) {
-      let key2 = char2[j];
-      // let key2 = char2[i];
-      if (obj2[key2] > 0) {
-        obj2[key2] += 1;
-      } else {
-        obj2[key2] = 1;
+      for (let j = 0; j < char2.length; j++) {
+        let key2 = char2[j];
+        // let key2 = char2[i];
+        if (obj2[key2] > 0) {
+          obj2[key2] += 1;
+        } else {
+          obj2[key2] = 1;
+        }
+        if (obj1[key1] !== obj2[key2]) {
+          return "NO";
+        } else {
+          return "YES";
+        }
       }
-      console.log(obj2);
     }
-
     // how do i compare the key:value of obj 1 with obj2 to see if they match
-
-    // if (obj1[key1] === obj2[) {
-    //   return ""
   }
 }
