@@ -5,6 +5,8 @@ must have a time complexity of 0(N)
 // 2. What are the data inputs?
 Two positive integers
 // 3. Can you restate the problem in your own words?
+
+
 // 4. Can the unknown be determined from the data inputs?
 // 5. Is the data inputs sufficient to determine the unknown? Insufficient? Redundant? Contradictory?
 // 6. How should I label important pieces of data input that are a part of the problem?
@@ -15,6 +17,8 @@ Two positive integers
 // 10.   Do you know a coding strategy that could be useful? Look at the unknown! And try to think of a familiar problem having the same or a similar unknown. Here is a problem related to yours and solve before. Could you use it? Could you use its result? Could you use its method?
 // 11.    Should you introduce some auxiliary element in order to make its use possible?
 // 12. Start with a simple example. Could you restate the problem? Could you restate it still differently?
+sameFrequency(10001, 2441);
+
 // 13. What about examples with empty inputs? Any other edge case examples? What examples with invalid inputs?
 // 14. Progress to more complex examples. What is your updated plan here to find a solution?
 // 15. If you still cannot solve the proposed problem, try to solve first some related problem. Could you imagine a more accessible related problem? A more general problem? A more special problem? An analogous problem? Could you solve a part of the problem? Keep only a part of the data inputs, drop the other part; how far is the unknown then determined, how can it vary? Could you derive something useful from the data? Could you think of other data appropriate to determine the unknown? Could you change the unknown or the data, or both if necessary, so that the new unknown and the new data are nearer to each other? Did you use all the data? Did you use the whole of the data inputs? Have you taken into account all essential notions involved in the problem?
@@ -29,3 +33,7 @@ Two positive integers
 // 21.  Can you make the code DRYer and refactor?
 // 22.  Can you improve the performance?
 // 23.   How have other people solved this problem?
+
+function sameFrequency(){
+
+}
