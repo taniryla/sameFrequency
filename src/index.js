@@ -58,7 +58,7 @@
 // not needed
 
 // // 12. Start with a simple example. Could you restate the problem? Could you restate it still differently?
-// sameFrequency(10001, 2431);
+sameFrequency(10001, 2431);
 
 // // 13. What about examples with empty inputs? Any other edge case examples? What examples with invalid inputs?
 // could use a regex or if statement i think should suffice
@@ -81,12 +81,15 @@
 // 23.   How have other people solved this problem?
 
 function sameFrequency(int1, int2) {
+  let char1 = {};
+  let char2 = {};
   if (typeof int1 === "number" && typeof int2 === "number") {
     // break down int 1 and int2 into individual char1 and char2 characters
-    let char1 = int1.split("");
-    let char2 = int2.split("");
+    char1 = int1.split();
+    char2 = int2.split();
     console.log(char1, char2);
     // loop through all char1 or char2 and compare if anything matches
-    for (let i = 0; i < int1.length; i++) {}
+    for (let i = 0; i < char1.length; i++) {}
+    let key = char1[i];
   }
 }
