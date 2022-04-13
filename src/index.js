@@ -87,13 +87,14 @@ function sameFrequency(int1, int2) {
     // convert to string first and break down int 1 and int2 into individual char1 and char2 characters
     let char1 = int1.toString().split("");
     let char2 = int2.toString().split("");
-    console.log(char1);
+    console.log(char1, char2);
     // loop through all char1 or char2 and compare if anything matches
     for (let i = 0; i < char1.length; i++) {
       let key1 = char1[i];
       let key2 = char2[i];
       obj1[key1] > 0 ? ++obj1[key1] : 1;
       obj2[key2] > 0 ? ++obj2[key2] : 1;
+      console.log(obj1, obj2);
     }
   }
 }
