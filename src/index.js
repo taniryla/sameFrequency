@@ -67,7 +67,7 @@ sameFrequency(10001, 2431);
 // not needed
 
 // // 15. If you still cannot solve the proposed problem, try to solve first some related problem. Could you imagine a more accessible related problem? A more general problem? A more special problem? An analogous problem? Could you solve a part of the problem? Keep only a part of the data inputs, drop the other part; how far is the unknown then determined, how can it vary? Could you derive something useful from the data? Could you think of other data appropriate to determine the unknown? Could you change the unknown or the data, or both if necessary, so that the new unknown and the new data are nearer to each other? Did you use all the data? Did you use the whole of the data inputs? Have you taken into account all essential notions involved in the problem?
-
+// trying to solve like countChar first
 // // Carry out your plan of the solution and check each one of your steps in pseudocode.
 // // 16.  Can you see clearly that the step is correct?
 // pseudocode below
@@ -87,14 +87,26 @@ function sameFrequency(int1, int2) {
     // convert to string first and break down int 1 and int2 into individual char1 and char2 characters
     let char1 = int1.toString().split("");
     let char2 = int2.toString().split("");
-    console.log(char1, char2);
     // loop through all char1 or char2 and compare if anything matches
     for (let i = 0; i < char1.length; i++) {
       let key1 = char1[i];
-      let key2 = char2[i];
-      obj1[key1] > 0 ? ++obj1[key1] : 1;
-      obj2[key2] > 0 ? ++obj2[key2] : 1;
-      console.log(obj1, obj2);
+      // let key2 = char2[i];
+      if (obj1[key1] > 0) {
+        obj1[key1] += 1;
+      } else {
+        obj1[key1] = 1;
+      }
+      console.log(obj1);
+    }
+    for (let j = 0; j < char2.length; j++) {
+      let key2 = char2[j];
+      // let key2 = char2[i];
+      if (obj2[key2] > 0) {
+        obj2[key2] += 1;
+      } else {
+        obj2[key2] = 1;
+      }
+      console.log(obj2);
     }
   }
 }
