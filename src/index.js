@@ -108,5 +108,10 @@ function sameFrequency(int1, int2) {
       }
       console.log(obj2);
     }
+
+    // how do i compare the key:value of obj 1 with obj2 to see if they match
+
+    // if (obj1[key1] === obj2[) {
+    //   return ""
   }
 }
