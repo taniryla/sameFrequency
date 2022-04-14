@@ -84,6 +84,7 @@ sameFrequency(10001, 2431);
 function sameFrequency(int1, int2) {
   let obj1 = {};
   let obj2 = {};
+  let newObj = {};
   if (typeof int1 === "number" && typeof int2 === "number") {
     // convert to string first and break down int 1 and int2 into individual char1 and char2 characters
     let char1 = int1.toString().split("");
@@ -107,8 +108,10 @@ function sameFrequency(int1, int2) {
         } else {
           obj2[key2] = 1;
         }
-        if (obj1[key1] !== obj2[key2]) {
-          return "NO";
+        console.log(obj2);
+        if (obj1[key1] === obj2[key2]) {
+          newObj[obj1[key1]];
+          console.log(newObj);
         } else {
           return "YES";
         }
