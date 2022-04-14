@@ -81,10 +81,17 @@ sameFrequency(10001, 2431);
 // 22.  Can you improve the performance?
 // 23.   How have other people solved this problem?
 
-function obj1(int1) {
+function sameFrequency(int1, int2) {
   let obj1 = {};
-  if (typeof int1 === "number") {
+  let obj2 = {};
+
+  let newObj = {};
+  if (typeof int1 === "number" && typeof int2 === "number") {
+    // convert to string first and break down int 1 and int2 into individual char1 and char2 characters
     let char1 = int1.toString().split("");
+    let char2 = int2.toString().split("");
+    // loop through all char1 or char2 and compare if anything matches
+
     for (let i = 0; i < char1.length; i++) {
       let key1 = char1[i];
       // let key2 = char2[i];
@@ -93,20 +100,8 @@ function obj1(int1) {
       } else {
         obj1[key1] = 1;
       }
+      console.log(obj1);
     }
-    return obj1;
-  }
-}
-
-console.log(obj1(10001));
-
-function sameFrequency(int1 = obj1(int), int2, obj1) {
-  let obj2 = {};
-  let newObj = {};
-  if (typeof int1 === "number" && typeof int2 === "number") {
-    // convert to string first and break down int 1 and int2 into individual char1 and char2 characters
-    let char2 = int2.toString().split("");
-    // loop through all char1 or char2 and compare if anything matches
 
     for (let j = 0; j < char2.length; j++) {
       let key2 = char2[j];
@@ -116,12 +111,12 @@ function sameFrequency(int1 = obj1(int), int2, obj1) {
       } else {
         obj2[key2] = 1;
       }
-      console.log(obj1, obj2);
+      console.log(obj2);
     }
-    // let output = obj1.filter((obj) => {
-    //   obj2.indexOf(obj) !== -1;
-    //   console.log(output);
-    // });
+
+    for (let key in obj1) {
+      if (obj1[key] !== obj2[key]) return false;
+    }
+    return true;
   }
 }
-// how do i compare the key:value of obj 1 with obj2 to see if they match
