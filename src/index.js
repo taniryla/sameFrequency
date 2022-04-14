@@ -68,6 +68,7 @@ sameFrequency(10001, 2431);
 
 // // 15. If you still cannot solve the proposed problem, try to solve first some related problem. Could you imagine a more accessible related problem? A more general problem? A more special problem? An analogous problem? Could you solve a part of the problem? Keep only a part of the data inputs, drop the other part; how far is the unknown then determined, how can it vary? Could you derive something useful from the data? Could you think of other data appropriate to determine the unknown? Could you change the unknown or the data, or both if necessary, so that the new unknown and the new data are nearer to each other? Did you use all the data? Did you use the whole of the data inputs? Have you taken into account all essential notions involved in the problem?
 // trying to solve like countChar first
+
 // // Carry out your plan of the solution and check each one of your steps in pseudocode.
 // // 16.  Can you see clearly that the step is correct?
 // pseudocode below
@@ -97,6 +98,7 @@ function sameFrequency(int1, int2) {
         obj1[key1] = 1;
       }
       console.log(obj1);
+
       for (let j = 0; j < char2.length; j++) {
         let key2 = char2[j];
         // let key2 = char2[i];
