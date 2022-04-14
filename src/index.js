@@ -64,7 +64,7 @@ sameFrequency(10001, 2431);
 // could use a regex or if statement i think should suffice
 
 // // 14. Progress to more complex examples. What is your updated plan here to find a solution?
-// not needed
+// without nested for loops, how can I loop two separate loops and make two arrays to filter obj1 as an indexOf obj2?
 
 // // 15. If you still cannot solve the proposed problem, try to solve first some related problem. Could you imagine a more accessible related problem? A more general problem? A more special problem? An analogous problem? Could you solve a part of the problem? Keep only a part of the data inputs, drop the other part; how far is the unknown then determined, how can it vary? Could you derive something useful from the data? Could you think of other data appropriate to determine the unknown? Could you change the unknown or the data, or both if necessary, so that the new unknown and the new data are nearer to each other? Did you use all the data? Did you use the whole of the data inputs? Have you taken into account all essential notions involved in the problem?
 // trying to solve like countChar first
