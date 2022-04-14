@@ -58,7 +58,7 @@
 // not needed
 
 // // 12. Start with a simple example. Could you restate the problem? Could you restate it still differently?
-sameFrequency(10001, 2431);
+// sameFrequency(10001, 2431);
 
 // // 13. What about examples with empty inputs? Any other edge case examples? What examples with invalid inputs?
 // could use a regex or if statement i think should suffice
@@ -120,3 +120,5 @@ function sameFrequency(int1, int2) {
     return true;
   }
 }
+
+console.log(sameFrequency(20004, 923440));
