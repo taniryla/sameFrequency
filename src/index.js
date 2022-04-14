@@ -81,15 +81,10 @@ sameFrequency(10001, 2431);
 // 22.  Can you improve the performance?
 // 23.   How have other people solved this problem?
 
-function sameFrequency(int1, int2) {
+function obj1() {
   let obj1 = {};
-  let obj2 = {};
-  let newObj = {};
-  if (typeof int1 === "number" && typeof int2 === "number") {
-    // convert to string first and break down int 1 and int2 into individual char1 and char2 characters
+  if (typeof int1 === "number") {
     let char1 = int1.toString().split("");
-    let char2 = int2.toString().split("");
-    // loop through all char1 or char2 and compare if anything matches
     for (let i = 0; i < char1.length; i++) {
       let key1 = char1[i];
       // let key2 = char2[i];
@@ -98,25 +93,36 @@ function sameFrequency(int1, int2) {
       } else {
         obj1[key1] = 1;
       }
+      return obj1;
       console.log(obj1);
-
-      for (let j = 0; j < char2.length; j++) {
-        let key2 = char2[j];
-        // let key2 = char2[i];
-        if (obj2[key2] > 0) {
-          obj2[key2] += 1;
-        } else {
-          obj2[key2] = 1;
-        }
-        console.log(obj2);
-        if (obj1[key1] === obj2[key2]) {
-          newObj[obj1[key1]];
-          console.log(newObj);
-        } else {
-          return "YES";
-        }
-      }
     }
-    // how do i compare the key:value of obj 1 with obj2 to see if they match
   }
+}
+
+function sameFrequency(int1, int2) {
+  let obj2 = {};
+  let newObj = {};
+  if (typeof int1 === "number" && typeof int2 === "number") {
+    // convert to string first and break down int 1 and int2 into individual char1 and char2 characters
+    let char2 = int2.toString().split("");
+    // loop through all char1 or char2 and compare if anything matches
+    for (let j = 0; j < char2.length; j++) {
+      let key2 = char2[j];
+      // let key2 = char2[i];
+      if (obj2[key2] > 0) {
+        obj2[key2] += 1;
+      } else {
+        obj2[key2] = 1;
+      }
+      let obj1 = obj1(int1);
+      console.log(obj1, obj2);
+      //   if (obj1[key1] === obj2[key2]) {
+      //     // newObj[obj1[key1]];
+      //     console.log(newObj);
+      //   } else {
+      //     return "YES";
+      //   }
+    }
+  }
+  // how do i compare the key:value of obj 1 with obj2 to see if they match
 }
